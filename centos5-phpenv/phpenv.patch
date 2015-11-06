@@ -1,0 +1,14 @@
+diff --git a/php-ext/http b/php-ext/http
+index 4f5c3c8..144a4c4 160000
+--- a/php-ext/http
++++ b/php-ext/http
+@@ -1 +1 @@
+-Subproject commit 4f5c3c8b8b58ffc1ef0f70e3b347dfbb6b63fd0f
++Subproject commit 144a4c4d99d6402fc312b37a44cfb2a4d1be1b88
+diff --git a/php-ext/mongo b/php-ext/mongo
+index c634cc5..5da12f3 160000
+--- a/php-ext/mongo
++++ b/php-ext/mongo
+@@ -1 +1 @@
+-Subproject commit c634cc5fdcd125d8f9779d2b2389534ee6d1a618
++Subproject commit 5da12f3aa0a7bb544ca0d9a98cbb8408ba5aece9
