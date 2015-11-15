@@ -2,8 +2,8 @@
 #
 # apt-get install libxml2-dev libpcre3-dev libbz2-dev libcurl4-openssl-dev libdb4.8-dev libjpeg-dev libpng12-dev libxpm-dev libfreetype6-dev libmysqlclient-dev postgresql-server-dev-9.1 libt1-dev libgd2-xpm-dev libgmp-dev libsasl2-dev libmhash-dev unixodbc-dev freetds-dev libpspell-dev libsnmp-dev libtidy-dev libxslt1-dev libmcrypt-dev libmemcached-dev
 
-export PHP_AUTOCONF=${PHP_AUTOCONF:-/usr/bin/autoconf-2.13}
-                   
+export PHP_AUTOCONF=${PHP_AUTOCONF:-/usr/bin/autoreconf -i}
+
 CONFIGURE_OPTIONS="--with-libdir=lib64
                    --with-apxs2=/usr/sbin/apxs
                    --enable-zend-multibyte
@@ -44,7 +44,6 @@ CONFIGURE_OPTIONS="--with-libdir=lib64
                    --with-mhash
                    --without-mm
                    --with-curl
-                   --with-zlib-dir
                    --without-gd
                    --with-gmp
                    --with-gd

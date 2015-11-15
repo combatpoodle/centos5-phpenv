@@ -3,16 +3,8 @@
 (
 	set -x
 	cd $PHPENV_ROOT/php-src;
-	patch -p 1 <<THE_END
---- a/configure
-+++ b/configure
-@@ -65164,6 +65164,7 @@
- 
- else
-   
-+echo
-   
- fi
- 
-THE_END
+	wget http://museum.php.net/php5/php-5.2.17.tar.gz
+	tar -xvzf php-5.2.17.tar.gz
+	yes y | cp -a php-5.2.17/* .
+	rm -rf php-5.2.17
 )
