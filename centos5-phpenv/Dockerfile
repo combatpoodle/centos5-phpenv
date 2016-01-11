@@ -6,7 +6,7 @@ RUN yum -y update && rm -rf /var/cache/yum
 
 RUN yum -y install epel-release && rm -rf /var/cache/yum
 RUN yum -y groupinstall "Development Tools" && rm -rf /var/cache/yum
-RUN yum -y install gcc-c++ freetds freetds-devel readline readline-devel libtidy libtidy-devel libxslt-devel libxslt httpd mod_ssl php which git yum-utils autoconf autoconf213 libgcc httpd-devel libxml2-devel openssl bzip2 bzip2-devel libjpeg libjpeg-devel libXpm libXpm-devel re2c libpng libpng-devel gd gd-devel git curl zlib-devel openssl-devel curl-devel asciidoc xmlto expat-devel ncurses ncurses-devel unixODBC-devel postgresql-devel sqlite-devel aspell-devel net-snmp-devel pcre-devel install gmp gmp-devel libmcrypt libmcrypt-devel mhash-devel mysql.x86_64 mysql-devel.x86_64 mysql-connector-odbc && rm -rf /var/cache/yum
+RUN yum -y install gcc-c++ freetds freetds-devel readline readline-devel libtidy libtidy-devel libxslt-devel libxslt httpd mod_ssl wget php which git yum-utils autoconf autoconf213 libgcc httpd-devel libxml2-devel openssl bzip2 bzip2-devel libjpeg libjpeg-devel libXpm libXpm-devel re2c libpng libpng-devel gd gd-devel git curl zlib-devel openssl-devel curl-devel asciidoc xmlto expat-devel ncurses ncurses-devel unixODBC-devel postgresql-devel sqlite-devel aspell-devel net-snmp-devel pcre-devel install gmp gmp-devel libmcrypt libmcrypt-devel mhash-devel mysql.x86_64 mysql-devel.x86_64 mysql-connector-odbc && rm -rf /var/cache/yum
 
 RUN yum-builddep php53 && rm -rf /var/cache/yum
 RUN yum-builddep php && rm -rf /var/cache/yum
