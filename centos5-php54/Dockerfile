@@ -6,6 +6,7 @@ RUN rpm -iUvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
 
 RUN yum -y install --enablerepo=remi         \
         php                                  \
+        mod_ssl                              \
         php-JsonSchema                       \
         php-cli                              \
         php-composer-installers              \
