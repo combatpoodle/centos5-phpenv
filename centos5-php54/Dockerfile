@@ -17,4 +17,24 @@ RUN yum -y install --enablerepo=remi         \
         php-xhprof                           \
         xhprof                               \
         php-pecl-ssh2                        \
+        php-bcmath                           \
+        php-dba                              \
+        php-embedded                         \
+        php-enchant                          \
+        php-fpm                              \
+        php-imap                             \
+        php-interbase                        \
+        php-ldap                             \
+        php-litespeed                        \
+        php-mcrypt                           \
+        php-mssql                            \
+        php-oci8                             \
+        php-odbc                             \
+        php-pgsql                            \
+        php-pspell                           \
+        php-recode                           \
+        php-snmp                             \
+        php-soap                             \
+        php-tidy                             \
+        php-xmlrpc                           \
     && rm -rf /var/cache/yum
